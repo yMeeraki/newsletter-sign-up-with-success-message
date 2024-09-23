@@ -15,28 +15,37 @@ body{
     
 }
 
+p{
+  font-size: 16px;
+}
+
 /*Styling of card*/
 .card{
     background-color: hsl(0, 0%, 100%);
 
     max-width: 50rem;
 
+    color:hsl(235, 18%, 26%);
    
     border-radius: 20px;
     padding: 20px;
+    
+    align-items: flex-start;
 }
 
 /*Styling of Content*/
 .content{
   display: flex;
+  
+  background-color: aqua;
 
-  gap: 2rem;
 }
 
 @media (max-width: 1024px){
   .content{
     flex-direction: column-reverse;
     max-width: 20rem;
+    gap:2rem;
   }
 }
 
@@ -45,13 +54,27 @@ body{
 .sign-up{
   display: flex;
   flex-direction: column;
-
+  padding: 30px;
   gap:2rem;
 
   justify-content: center;
   align-items: center;
+
+  
 }
 
+.sign-up p{
+ text-align: left;
+}
+
+.sign-up li{
+  list-style: none;
+  list-style-image: url("./assets/images/icon-list.svg");
+  
+  background-color: aquamarine;
+  text-align: left;
+  
+}
 
 
 /*success-message-start*/
@@ -89,7 +112,7 @@ body{
     5. Improve media defaults
   */
   img, picture, video, canvas, svg {
-    display: block;
+    
     max-width: 100%;
   }
   
