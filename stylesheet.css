@@ -11,11 +11,52 @@ body{
     align-items: center;
 
     min-height: 100svh;
+
+    
 }
 
 /*Styling of card*/
 .card{
     background-color: hsl(0, 0%, 100%);
+
+    max-width: 50rem;
+
+   
+    border-radius: 20px;
+    padding: 20px;
+}
+
+/*Styling of Content*/
+.content{
+  display: flex;
+
+  gap: 2rem;
+}
+
+@media (max-width: 1024px){
+  .content{
+    flex-direction: column-reverse;
+    max-width: 20rem;
+  }
+}
+
+
+/*Styling of Sign up content*/
+.sign-up{
+  display: flex;
+  flex-direction: column;
+
+  gap:2rem;
+
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+/*success-message-start*/
+.success-message-start{
+  display: none;
 }
 
 
