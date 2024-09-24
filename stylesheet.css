@@ -36,6 +36,8 @@ p{
 /*Styling of Content*/
 .content{
   display: flex;
+
+  display: none;
 }
 
 @media (max-width: 1024px){
@@ -112,13 +114,6 @@ input{
   font-weight: 700;
 }
 
-
-/*success-message-start*/
-.success-message-start{
-  display: none;
-}
-
-
 /*Error message*/
 .error-message{
   color: hsl(4, 100%, 67%);
@@ -127,6 +122,40 @@ input{
   display:none;
 }
 
+/*success-message-start*/
+.success-message{
+  display: flex;
+  flex-direction: column;
+
+  gap: 1rem;
+
+  max-width:25rem;
+  max-height:30rem;
+
+  padding: 30px;
+}
+
+.success-message img{
+  width: 10%;
+}
+
+.dismiss-message-btn{
+  width: 22rem;
+
+  border-radius: 10px;
+
+  background-color: hsl(234, 29%, 20%);
+  color: hsl(0, 0%, 100%);
+
+  padding: 20px;
+
+  cursor: pointer;
+}
+
+.dismiss-message-btn:hover{
+  background-color: hsl(235, 18%, 26%);
+  font-weight: 700;
+}
 
 /*---------------*/
 /*
