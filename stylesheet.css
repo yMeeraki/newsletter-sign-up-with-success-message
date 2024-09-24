@@ -36,16 +36,15 @@ p{
 /*Styling of Content*/
 .content{
   display: flex;
-  
-  background-color: aqua;
-
 }
 
 @media (max-width: 1024px){
   .content{
     flex-direction: column-reverse;
-    max-width: 20rem;
+    max-width: 25rem;
     gap:2rem;
+
+    padding: 20px;
   }
 }
 
@@ -63,23 +62,69 @@ p{
   
 }
 
-.sign-up p{
- text-align: left;
-}
-
 .sign-up li{
-  list-style: none;
+  list-style-type: none;
   list-style-image: url("./assets/images/icon-list.svg");
   
-  background-color: aquamarine;
   text-align: left;
-  
+
+  text-indent: 5px;
+}
+
+/*input section*/
+.input-section-text {
+  display: flex;
+
+  justify-content: space-between;
+}
+
+.input-section label{
+  font-size: 14px;
+  font-weight: 700;
+}
+
+input{
+  width: 22rem;
+
+  border-radius: 10px;
+
+  border: 1px solid hsl(231, 7%, 60%);
+
+  padding: 20px;
+}
+
+/*Styling of subscribe-btn*/
+.subscribe-btn{
+  width: 22rem;
+
+  border-radius: 10px;
+
+  background-color: hsl(234, 29%, 20%);
+  color: hsl(0, 0%, 100%);
+
+  padding: 20px;
+
+  cursor: pointer;
+}
+
+.subscribe-btn:hover{
+  background-color: hsl(235, 18%, 26%);
+  font-weight: 700;
 }
 
 
 /*success-message-start*/
 .success-message-start{
   display: none;
+}
+
+
+/*Error message*/
+.error-message{
+  color: hsl(4, 100%, 67%);
+  font-size: 14px;
+  
+  display:none;
 }
 
 
@@ -135,4 +180,12 @@ p{
   */
   #root, #__next {
     isolation: isolate;
+  }
+
+ /*
+    9. Remove margin and padding of lists.
+  */
+  ul{
+    margin: 0px;
+    padding: 0px;
   }
